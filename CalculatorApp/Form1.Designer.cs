@@ -43,7 +43,6 @@
 			this.button_plus = new System.Windows.Forms.Button();
 			this.button_minus = new System.Windows.Forms.Button();
 			this.button_multiply = new System.Windows.Forms.Button();
-			this.button_decimal = new System.Windows.Forms.Button();
 			this.button_clear = new System.Windows.Forms.Button();
 			this.button_divide = new System.Windows.Forms.Button();
 			this.SuspendLayout();
@@ -58,6 +57,7 @@
 			this.button_seven.TabIndex = 0;
 			this.button_seven.Text = "7";
 			this.button_seven.UseVisualStyleBackColor = true;
+			this.button_seven.Click += new System.EventHandler(this.button_seven_Click);
 			// 
 			// displayScreen
 			// 
@@ -81,6 +81,7 @@
 			this.button_eight.TabIndex = 2;
 			this.button_eight.Text = "8";
 			this.button_eight.UseVisualStyleBackColor = true;
+			this.button_eight.Click += new System.EventHandler(this.button_eight_Click);
 			// 
 			// button_nine
 			// 
@@ -92,6 +93,7 @@
 			this.button_nine.TabIndex = 3;
 			this.button_nine.Text = "9";
 			this.button_nine.UseVisualStyleBackColor = true;
+			this.button_nine.Click += new System.EventHandler(this.button_nine_Click);
 			// 
 			// button_four
 			// 
@@ -103,6 +105,7 @@
 			this.button_four.TabIndex = 4;
 			this.button_four.Text = "4";
 			this.button_four.UseVisualStyleBackColor = true;
+			this.button_four.Click += new System.EventHandler(this.button_four_Click);
 			// 
 			// button_five
 			// 
@@ -114,6 +117,7 @@
 			this.button_five.TabIndex = 5;
 			this.button_five.Text = "5";
 			this.button_five.UseVisualStyleBackColor = true;
+			this.button_five.Click += new System.EventHandler(this.button_five_Click);
 			// 
 			// button_six
 			// 
@@ -124,6 +128,7 @@
 			this.button_six.TabIndex = 6;
 			this.button_six.Text = "6";
 			this.button_six.UseVisualStyleBackColor = true;
+			this.button_six.Click += new System.EventHandler(this.button_six_Click);
 			// 
 			// button_three
 			// 
@@ -135,6 +140,7 @@
 			this.button_three.Text = "3";
 			this.button_three.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
 			this.button_three.UseVisualStyleBackColor = true;
+			this.button_three.Click += new System.EventHandler(this.button_three_Click);
 			// 
 			// button_two
 			// 
@@ -145,6 +151,7 @@
 			this.button_two.TabIndex = 8;
 			this.button_two.Text = "2";
 			this.button_two.UseVisualStyleBackColor = true;
+			this.button_two.Click += new System.EventHandler(this.button_two_Click);
 			// 
 			// button_one
 			// 
@@ -155,6 +162,7 @@
 			this.button_one.TabIndex = 9;
 			this.button_one.Text = "1";
 			this.button_one.UseVisualStyleBackColor = true;
+			this.button_one.Click += new System.EventHandler(this.button_one_Click);
 			// 
 			// button_zero
 			// 
@@ -162,10 +170,11 @@
 			this.button_zero.Location = new System.Drawing.Point(79, 450);
 			this.button_zero.Margin = new System.Windows.Forms.Padding(6);
 			this.button_zero.Name = "button_zero";
-			this.button_zero.Size = new System.Drawing.Size(287, 50);
+			this.button_zero.Size = new System.Drawing.Size(435, 45);
 			this.button_zero.TabIndex = 10;
 			this.button_zero.Text = "0";
 			this.button_zero.UseVisualStyleBackColor = true;
+			this.button_zero.Click += new System.EventHandler(this.button_zero_Click);
 			// 
 			// button_equal
 			// 
@@ -177,6 +186,7 @@
 			this.button_equal.TabIndex = 11;
 			this.button_equal.Text = "=";
 			this.button_equal.UseVisualStyleBackColor = true;
+			this.button_equal.Click += new System.EventHandler(this.button_equal_Click);
 			// 
 			// button_plus
 			// 
@@ -188,6 +198,7 @@
 			this.button_plus.TabIndex = 12;
 			this.button_plus.Text = "+";
 			this.button_plus.UseVisualStyleBackColor = true;
+			this.button_plus.Click += new System.EventHandler(this.button_plus_Click);
 			// 
 			// button_minus
 			// 
@@ -200,6 +211,7 @@
 			this.button_minus.Text = "-";
 			this.button_minus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
 			this.button_minus.UseVisualStyleBackColor = true;
+			this.button_minus.Click += new System.EventHandler(this.button_minus_Click);
 			// 
 			// button_multiply
 			// 
@@ -211,18 +223,7 @@
 			this.button_multiply.TabIndex = 14;
 			this.button_multiply.Text = "X";
 			this.button_multiply.UseVisualStyleBackColor = true;
-			// 
-			// button_decimal
-			// 
-			this.button_decimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.button_decimal.Location = new System.Drawing.Point(389, 450);
-			this.button_decimal.Margin = new System.Windows.Forms.Padding(6);
-			this.button_decimal.Name = "button_decimal";
-			this.button_decimal.Size = new System.Drawing.Size(125, 45);
-			this.button_decimal.TabIndex = 15;
-			this.button_decimal.Text = ".";
-			this.button_decimal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.button_decimal.UseVisualStyleBackColor = true;
+			this.button_multiply.Click += new System.EventHandler(this.button_multiply_Click);
 			// 
 			// button_clear
 			// 
@@ -234,6 +235,7 @@
 			this.button_clear.TabIndex = 16;
 			this.button_clear.Text = "AC";
 			this.button_clear.UseVisualStyleBackColor = true;
+			this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
 			// 
 			// button_divide
 			// 
@@ -245,6 +247,7 @@
 			this.button_divide.TabIndex = 17;
 			this.button_divide.Text = "/";
 			this.button_divide.UseVisualStyleBackColor = true;
+			this.button_divide.Click += new System.EventHandler(this.button_divide_Click);
 			// 
 			// Form1
 			// 
@@ -253,7 +256,6 @@
 			this.ClientSize = new System.Drawing.Size(712, 571);
 			this.Controls.Add(this.button_divide);
 			this.Controls.Add(this.button_clear);
-			this.Controls.Add(this.button_decimal);
 			this.Controls.Add(this.button_multiply);
 			this.Controls.Add(this.button_minus);
 			this.Controls.Add(this.button_plus);
@@ -272,8 +274,7 @@
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Margin = new System.Windows.Forms.Padding(6);
 			this.Name = "Form1";
-			this.Text = "Form1";
-			this.Load += new System.EventHandler(this.Form1_Load);
+			this.Text = "Calculator";
 			this.ResumeLayout(false);
 
 		}
@@ -295,7 +296,6 @@
 		private System.Windows.Forms.Button button_plus;
 		private System.Windows.Forms.Button button_minus;
 		private System.Windows.Forms.Button button_multiply;
-		private System.Windows.Forms.Button button_decimal;
 		private System.Windows.Forms.Button button_clear;
 		private System.Windows.Forms.Button button_divide;
 	}
