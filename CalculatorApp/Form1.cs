@@ -193,11 +193,16 @@ namespace CalculatorApp
 					else
 					{
 						displayScreen.Text = Error;
+						_firstNumber = "";
 					}
 				}
 
-				displayScreen.Text = _result.ToString("0.##");
-				_firstNumber = _result.ToString("0.##");
+				if (displayScreen.Text != Error)
+				{
+					displayScreen.Text = _result.ToString("0.##");
+					_firstNumber = _result.ToString("0.##");
+				}
+
 				_secondNumber = "";
 				_inputValue = "";
 				_calculateAction = "";
